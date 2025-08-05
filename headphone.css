@@ -1,0 +1,176 @@
+.headphone{
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.phonelink{
+    text-decoration: none;
+}
+.headphone h1{
+    color: black;
+    font-weight: bold;
+    
+    
+}
+.headphone:hover{
+    font-size: 40px;
+}
+.phone{
+    text-align: center;
+    padding-bottom: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    
+}
+.homevideo{
+    width: 1000px;
+    position: relative;
+    left: 270px;
+    
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;  
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #0c0808;
+  border-radius: 50%;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;  
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+.last{
+  text-align: center;
+  font-size: 30px;
+}
+  
+.fulllist ul{
+  color:black;
+  list-style: none;
+  letter-spacing:1px;
+
+  
+}
+.list1 ul{
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+}
+
+.list1 li{
+  text-decoration: none;
+  font-size: 20px;
+
+}
+.list1 li:hover{
+  color: #0c3229;
+
+}
+.link{
+  text-decoration: none;
+  color: #000000;
+}
+.link:hover{
+  color:#0ff;
+
+  
+}
+.link:hover::before{
+        content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transition: 0.4s ease;
+}
+.li{
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+
+}
+.li:hover{
+  color: #02ddd5;
+}

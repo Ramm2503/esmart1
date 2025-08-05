@@ -1,0 +1,47 @@
+.help-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #0056b3;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #003d7a;
+  }
+  
+  .faq-section, .contact-section {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .faq-item {
+    margin-bottom: 1.2rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem;
+    color: #0066cc;
+    margin-bottom: 0.3rem;
+  }
+  
+  .contact-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .contact-section li {
+    margin-bottom: 0.5rem;
+  }
+  

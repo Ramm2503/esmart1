@@ -1,0 +1,538 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3eded;  
+    overflow-x: hidden;
+    
+    
+  }
+  .navbar1 {
+    padding: 30px;
+    background: #8ACCD5;
+    text-align: center;
+  }
+  .navbar1 h1 {
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif;
+    color: #000000;
+    position: relative;
+    bottom:0px;  
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    
+  }
+
+  .navbar1 h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0, 255, 255, 0.8), transparent);
+    transform:skewX(-20deg);
+    animation: sweep 3s infinite;
+    pointer-events: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 120px;
+    padding-top: 10px;
+    justify-content: center;
+    
+  }
+  .nav-item {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    transition: color 0.3s;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; 
+  }
+
+  .nav-item i {
+    font-size: 22px;
+    margin-top: -70px;
+  }
+
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transition: 0.4s ease;
+  }
+
+  .nav-item:hover {
+    color: #0ff;
+  }
+
+  .nav-item:hover::before {
+    width: 100%;
+  }
+  ul {
+    display: block;
+    color: white;
+  }
+  .navbar1 li {
+    display: inline-block;
+     padding: 20px;
+     position: relative;
+     top: 30px;
+    font-family: cursive;
+    text-decoration: none;
+  }
+  .navbar1 li:hover{
+    color: #0ff;
+  }
+
+  @keyframes sweep {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+
+/* img */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.brand-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.brand {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  gap: 8px;
+}
+
+.brand i {
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+
+.brand:hover {
+  transform: scale(1.12) rotate(2deg);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  }
+}
+
+
+.boat {
+  background: linear-gradient(135deg, #111, #333);
+  box-shadow: 0 0 15px #00ffc8;
+}
+
+.apple {
+  background: linear-gradient(135deg, #555, #999);
+  box-shadow: 0 0 15px #ffffff;
+  
+}
+
+
+.google {
+  background: linear-gradient(135deg, #111, #333);
+  box-shadow: 0 0 15px #00ffc8;
+}
+
+.samsung {
+  background: linear-gradient(135deg, #111, #333);
+  box-shadow: 0 0 15px #00ffc8;
+}
+.sony{
+  background: linear-gradient(135deg, #555, #999);
+  box-shadow: 0 0 15px #ffffff;
+}
+.fastrack{
+  background: linear-gradient(135deg, #555, #999);
+  box-shadow: 0 0 15px #ffffff;
+}
+.titan{
+  background: linear-gradient(135deg, #111, #333);
+  box-shadow: 0 0 15px #00ffc8;
+}
+.sonata{
+  background: linear-gradient(135deg, #555, #999);
+  box-shadow: 0 0 15px #ffffff;
+}
+
+/* card */
+img{
+  width: 100%;
+  height: 800px;
+
+}
+
+.cont{
+  margin: 10px 0px 0px 200px;
+  width: 70%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.cont img{
+  margin-bottom: 100px;
+  width: 25%;
+  height: 100%;
+  object-fit:contain;
+  border-radius: 10px;
+  
+  transition: all ease-in-out 0.5s;
+}
+
+.cont img:hover{
+width: 35%;
+}
+
+.Park img{
+  margin-top: 50px;
+  width: 300px;
+  height: 80px;
+
+
+}
+
+/* "Style That Speaks." */
+
+.h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #3cdec0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    /* margin-bottom: 100px; */
+    
+    
+    letter-spacing: 1px;    
+}
+.h1{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #3cdec0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  /* margin-bottom: 100px; */
+  
+  
+  letter-spacing: 1px; 
+}
+
+.cont img{
+  height: 500px;
+  width: 200px;
+  padding: 30px;
+}
+
+
+.content{
+  position: relative;
+  width: 230px;
+  height: 230px;
+  transform-style: preserve-3d;
+  animation: animate 30s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+
+  }
+  10%{
+    transform:prespective(1000px) rotate(-370deg); 
+  }
+
+}
+
+
+.content span{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  transform-origin:center;
+  transform: rotate(calc(var(--i)*45deg)) translateZ(370px);
+}
+
+.content span img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 1.5s;
+}
+.content span img:hover{
+  transform: translateY(30px) scale(1.2);
+  cursor: pointer;
+}
+
+/* cards */
+
+/* From Uiverse.io by Sharkotech */ 
+.card {
+  width: 200px;
+  height: 270px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+}
+
+
+
+.main:hover #c1 {
+  transform: translateX(-100px) rotate(-40deg);
+}
+
+.main:hover #c2 {
+  transform: translateX(-50px) rotate(-30deg);
+}
+
+.main:hover #c3 {
+  transform: translateX(0) rotate(-20deg);
+}
+
+.main:hover #c4 {
+  transform: translateX(50px) rotate(-10deg);
+}
+
+#c1:hover {
+  transform: translateX(-150px) rotate(0deg) !important;
+}
+
+#c2:hover {
+  transform: translateX(-100px) rotate(0deg) !important;
+}
+
+#c3:hover {
+  transform: translateX(-50px) rotate(0deg) !important;
+}
+
+#c4:hover {
+  transform: translateX(50px) rotate(0deg) !important;
+}
+
+.main {
+  display: grid;
+  height: 50vmax;
+  place-items: center;
+}
+.main img{
+  height: 100%;
+}
+.full
+{
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.full1{
+  margin-bottom: 100px;
+}
+.img{
+ padding-top: 100px;
+}
+
+/* last */
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;  
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #0c0808;
+  border-radius: 50%;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;  
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+.last{
+  text-align: center;
+  font-size: 30px;
+}
+  
+.fulllist ul{
+  color:black;
+  list-style: none;
+  letter-spacing:1px;
+
+  
+}
+.list1 ul{
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+}
+
+.list1 li{
+  text-decoration: none;
+  font-size: 20px;
+
+}
+.list1 li:hover{
+  color: #0c3229;
+
+}
+.link{
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+.link:hover{
+  color:#0ff;
+
+  
+}
+.link:hover::before{
+        content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transition: 0.4s ease;
+}
+.li{
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+
+}
+.li:hover{
+  color: #02ddd5;
+}
+.brand .apple{
+  color: #000000;
+}
